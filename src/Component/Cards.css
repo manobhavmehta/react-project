@@ -1,0 +1,67 @@
+.Grid
+{
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    row-gap: 20px;
+   column-gap: 20px;
+   padding: 40px;
+}
+.Grid-Item
+{
+    padding: 2px;
+    background-color: rgb(167, 167, 169);
+    height:100%;
+}
+img
+{
+    width: 100%;
+    height: 60%;
+}
+.Price 
+{ 
+    padding: 5px;
+    text-align: left;
+}
+.Product
+{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    text-decoration: none; 
+}
+.Product:hover
+{
+    color: rgb(254, 253, 253);
+}
+.Name
+{
+    padding: 3px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .Grid
+    {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+@media screen and (max-width: 800px) {
+    .Grid
+    {
+        grid-template-columns: 1fr 1fr
+    }
+}
+@media screen and (max-width: 550px) {
+    .Grid
+    {
+        grid-template-columns: 1fr
+    }
+}
+@media screen and (max-width: 300px) {
+  
+    img
+    {
+        height: 43%;
+    }
+}
