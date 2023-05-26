@@ -35,7 +35,7 @@ const Navbar = () =>{
 
 <div className="cart">
 
-  <a href="/"><h3><i className="fa-solid fa-cart-arrow-down"></i></h3></a>
+  <Link to = "/"><h3><i className="fa-solid fa-cart-arrow-down"></i></h3></Link>
   <a onClick={() => setshowicon(!showicon)}><i className="fa-solid fa-bars"></i></a>
   
 </div>
